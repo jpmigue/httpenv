@@ -24,7 +24,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          # tags: jpmigue/httpenv:latest, jpmigue/httpenv:01
-          tags:
-            - jpmigue/httpenv:latest
-            - jpmigue/httpenv:02
+          tags: jpmigue/httpenv:latest, jpmigue/httpenv:02
