@@ -27,6 +27,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Docker Meta
+        id: docker_meta
         uses: docker/metadata-action@v6
         with:
           images: jpmigue/httpenv
