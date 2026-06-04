@@ -32,12 +32,12 @@ jobs:
           images: jpmigue/httpenv
           flavor: |
             latest=false
-        tags: |
-          type=raw,value=04
-          type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
-          type=ref,event=pr
-          type=ref,event=branch
-          type=semver,pattern={{version}}
+          tags: |
+            type=raw,value=04
+            type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
+            type=ref,event=pr
+            type=ref,event=branch
+            type=semver,pattern={{version}}
 
 
       
